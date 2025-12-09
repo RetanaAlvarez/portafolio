@@ -12,8 +12,10 @@
     "SobreMi": {
         "titulo": "Sobre mí",
         "pregunta": "¿Quién soy?",
-        "descripcion1": "Soy un desarrollador Java especializado en backend, microservicios y arquitectura de software. Cuento con experiencia construyendo aplicaciones empresariales, migrando sistemas heredados, consumiendo APIs internas y externas, y optimizando procesos mediante buenas prácticas y código limpio.",
-        "descripcion2": "Me considero una persona analítica, autodidacta y orientada a resultados, con pasión por la tecnología y la mejora continua.",
+        "descripcion": [
+            "Soy un desarrollador Java especializado en backend, microservicios y arquitectura de software. Cuento con experiencia construyendo aplicaciones empresariales, migrando sistemas heredados, consumiendo APIs internas y externas, y optimizando procesos mediante buenas prácticas y código limpio.",
+            "Me considero una persona analítica, autodidacta y orientada a resultados, con pasión por la tecnología y la mejora continua."
+        ],
         "experienciaAnos": "3+",
         "experiencia": "Años de Experiencia",
         "empresacantidad": "4+",
