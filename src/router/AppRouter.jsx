@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Experiencia from "../pages/experiencia/experiencia";
+import Experiencia from "../pages/Experiencia/Experiencia";
 import Habilidades from "../pages/Habilidades/Habilidades";
 import Inicio from "../pages/inicio/inicio";
 import Sobre from '../pages/Sobre/Sobre';
