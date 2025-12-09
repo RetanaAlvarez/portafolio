@@ -1,0 +1,17 @@
+h4{
+    color: rgb(92, 130, 246);
+}
+
+.home{
+    text-align: center;
+    display: flex;
+    flex-direction: column(2fr,1);
+}
+
+h3{
+    color: rgba(255, 255, 255, 0.427);
+}
+
+p{
+    padding: 0px 80px;
+}

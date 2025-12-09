@@ -1,0 +1,22 @@
+li {
+    list-style: none;
+}
+
+.nav {
+    padding: 10px 28px;
+    height: 60px;
+    background: rgb(1, 1, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    gap:"51px";
+    z-index: 800;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
