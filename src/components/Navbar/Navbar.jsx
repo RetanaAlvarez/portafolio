@@ -15,12 +15,12 @@ const Navbar = () => {
         <>
             <nav className={styles.nav}>
                 <ul className={styles.menu}>
-                    <li><a onClick={() => scrollToSection("/")}>{texto.Inicio}</a></li>
+                    <li><a onClick={() => scrollToSection("inicio")}>{texto.Inicio}</a></li>
                     <li><a onClick={() => scrollToSection("sobre")}>{texto.Sobre}</a></li>
-                    <li><a onClick={() => scrollToSection("/")}>{texto.Experiencia}</a></li>
-                    <li><a onClick={() => scrollToSection("/")}>{texto.Habilidades}</a></li>
-                    <li><a onClick={() => scrollToSection("/")}>{texto.Formacion}</a></li>
-                    <li><a onClick={() => scrollToSection("/")}>{texto.Contacto}</a></li>
+                    <li><a onClick={() => scrollToSection("experiencia")}>{texto.Experiencia}</a></li>
+                    <li><a onClick={() => scrollToSection("habilidades")}>{texto.Habilidades}</a></li>
+                    <li><a onClick={() => scrollToSection("formacion")}>{texto.Formacion}</a></li>
+                    <li><a onClick={() => scrollToSection("contacto")}>{texto.Contacto}</a></li>
                 </ul>
             </nav>
         </>
