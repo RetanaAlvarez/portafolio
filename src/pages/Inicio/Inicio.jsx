@@ -11,12 +11,14 @@ function inicio() {
     <>
       <Navbar />
       <section id='inicio'>
-        <div className='home'>
+        <div className={styles.home}>
           <img src={texto.Inicio.foto} alt="MiFoto" />
-          <h4>{texto.Inicio.hola}</h4>
-          <h2 className="text-white text-4xl md:text-6xl mb-4">{texto.Inicio.name}</h2>
-          <h3>{texto.Inicio.puesto}</h3>
-          <p>{texto.Inicio.descripcion}</p>
+          <div>
+            <h4>{texto.Inicio.hola}</h4>
+            <h2>{texto.Inicio.name}</h2>
+            <h3>{texto.Inicio.puesto}</h3>
+            <p>{texto.Inicio.descripcion}</p>
+          </div>
         </div>
       </section>
       <Sobre />

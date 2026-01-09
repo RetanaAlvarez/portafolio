@@ -1,0 +1,53 @@
+#experiencia {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.expContainer {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); */
+}
+
+.topRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconEmpresa{
+    background: rgba(77, 163, 255, 0.15);
+    padding: 14px;
+    border-radius: 12px;
+    display: flex;
+    font-size: 28px;
+    color: #4da3ff;
+}
+
+.infoEmpresa{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.infoEmpresa h2{
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
