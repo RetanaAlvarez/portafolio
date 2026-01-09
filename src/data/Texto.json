@@ -11,18 +11,35 @@
     "repositorio": "Ver proyectos",
     "SobreMi": {
         "titulo": "Sobre mí",
-        "pregunta": "¿Quién soy?",
-        "descripcion": [
-            "Soy un desarrollador Java especializado en backend, microservicios y arquitectura de software. Cuento con experiencia construyendo aplicaciones empresariales, migrando sistemas heredados, consumiendo APIs internas y externas, y optimizando procesos mediante buenas prácticas y código limpio.",
-            "Me considero una persona analítica, autodidacta y orientada a resultados, con pasión por la tecnología y la mejora continua."
-        ],
-        "experienciaAnos": "3+",
-        "experiencia": "Años de Experiencia",
-        "empresacantidad": "4+",
-        "empresa": "Empresas",
-        "tecnologiacantidad": "20+",
-        "tecnologia": "tecnologías"
+        "pregunta": "¿Quién soy?"
     },
+    "DescripcionSobre": [
+        {
+            "texto": "Soy un desarrollador Java especializado en backend, microservicios y arquitectura de software. Cuento con experiencia construyendo aplicaciones empresariales, migrando sistemas heredados, consumiendo APIs internas y externas, y optimizando procesos mediante buenas prácticas y código limpio."
+        },
+        {
+            "texto": "Me considero una persona analítica, autodidacta y orientada a resultados, con pasión por la tecnología y la mejora continua."
+        }
+    ],
+    "TiempoExperiencias": [
+        {
+            "cantidad": "3+",
+            "titulo": "Años de Experiencia"
+        },
+        {
+            "cantidad": "4+",
+            "titulo": "Empresas"
+        },
+        {
+            "cantidad": "20+",
+            "titulo": "tecnologías"
+        }
+    ],
+    "LogoSobre": [
+        "codigo",
+        "empresa",
+        "estudio"
+    ],
     "experiencia_profesional": [
         {
             "empresa": "Totalplay (Grupo Salinas)",
@@ -64,7 +81,7 @@
             ]
         },
         {
-            "empresa": "iSOFTGROUP (Consultoría)",
+            "empresa": "JSOFTGROUP (Consultoría)",
             "puesto": "Programador",
             "periodo": "Enero 2021 - Febrero 2023",
             "descripcion": "Desarrollo full stack de aplicaciones empresariales.",
@@ -94,77 +111,128 @@
         "Java",
         "Spring Boot",
         "Oracle",
-        "Angular",
         "React",
         "Git",
         "Linux",
-        "Postman",
-        "Swagger"
+        "Postman"
     ],
-    "habilidades_tecnicas": {
-        "backend": [
-            "Java",
-            "Spring Boot",
-            "Spring MVC",
-            "JPA / Hibernate",
-            "Microservicios REST"
-        ],
-        "frontend": [
-            "Angular",
-            "React",
-            "TypeScript",
-            "Bootstrap"
-        ],
-        "bases_de_datos": [
-            "Oracle",
-            "MySQL",
-            "PostgreSQL"
-        ],
-        "herramientas": [
-            "Git",
-            "GitHub",
-            "Maven",
-            "Postman",
-            "Swagger",
-            "Jira"
-        ],
-        "sistemas_operativos": [
-            "Windows",
-            "Linux (Ubuntu, Mint, Server)"
-        ],
-        "otras_tecnologias": [
-            "SOAP",
-            "REST",
-            "JSON",
-            "XML",
-            "JUnit",
-            "Apache Tomcat"
-        ]
-    },
+    "habilidades_tecnicas": [
+        {
+            "nombre": "Back End",
+            "herramientas": [
+                "Java",
+                "Spring Boot",
+                "Spring MVC",
+                "JPA / Hibernate",
+                "Microservicios REST"
+            ]
+        },
+        {
+            "nombre": "Frontend",
+            "herramientas": [
+                "Angular",
+                "React",
+                "TypeScript",
+                "Bootstrap"
+            ]
+        },
+        {
+            "nombre": "Base de Datos",
+            "herramientas": [
+                "Oracle",
+                "MySQL",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "nombre": "Herramientas",
+            "herramientas": [
+                "Git",
+                "GitHub",
+                "Maven",
+                "Postman",
+                "Swagger",
+                "Jira"
+            ]
+        },
+        {
+            "nombre": "Sistemas Operativos",
+            "herramientas": [
+                "Windows",
+                "Linux (Ubuntu, Mint, Server)"
+            ]
+        },
+        {
+            "nombre": "Otras Tecnologias",
+            "herramientas": [
+                "SOAP",
+                "REST",
+                "JSON",
+                "XML",
+                "JUnit",
+                "Apache Tomcat"
+            ]
+        }
+    ],
     "certificaciones_cursos": [
-        "Programación fundamentos de lenguaje Java y POO",
-        "Spring Framework MVC, CORE, DAO, ORM, CONTEXT",
-        "Spring Boot Microservicios REST",
-        "Spring Boot Thymeleaf y Spring Boot BATCH",
-        "Hibernate y JPA",
-        "CCNA/7: Redes empresariales",
-        "Seguridad informática: IPv7: Switching, Routing and Wireless Essentials",
-        "NDG Linux Unhatched"
+        {
+            "nombre": "Certificaciones y/o Certificaciones",
+            "cursos": [
+                "Programación fundamentos de lenguaje Java y POO",
+                "Spring Framework MVC, CORE, DAO, ORM, CONTEXT",
+                "Spring Boot Microservicios REST",
+                "Spring Boot Thymeleaf y Spring Boot BATCH",
+                "Hibernate y JPA",
+                "CCNA/7: Redes empresariales",
+                "Seguridad informática: IPv7: Switching, Routing and Wireless Essentials",
+                "NDG Linux Unhatched"
+            ]
+        }
     ],
     "formacion_academica": {
+        "nombre": "Formación Académica",
         "carrera": "Ingeniería en Sistemas Computacionales",
         "institucion": "Tecnológico de Estudios Superiores de Jocotitlán",
         "periodo": "2018 - 2023"
+    },
+    "FormacionIcon": [
+        "World",
+        "Location"
+    ],
+    "FormacionText": {
+        "titulo": [
+            "Inglés Técnico:",
+            "Nivel Intermedio"
+        ],
+        "descripcion": [
+            "Ubicación:",
+            "México"
+        ]
     },
     "idiomas": {
         "ingles": "Técnico - Intermedio"
     },
     "ubicacion": "México",
-    "contacto": {
-        "email": "retanaalvarez@gmail.com",
-        "ubicacion": "Ciudad de México, México",
-        "portafolio": "lenyyanel.vercel.app",
-        "linkedin": "Agregar perfil de LinkedIn",
+    "Contacto": {
+        "titulo": "Contacto",
+        "Referencias": [
+            {
+                "nombre": "Email",
+                "contenido": "retanaalvarez@gmail.com"
+            },
+            {
+                "nombre": "Ubicación",
+                "contenido": "Ciudad de México, México"
+            },
+            {
+                "nombre": "LinkedIn",
+                "contenido": "Agregar perfil de LinkedIn"
+            },
+            {
+                "nombre": "Whatsapp",
+                "contenido": "(52) 712 193 3662"
+            }
+        ],
         "mensaje": "¿Interesado en trabajar juntos? Estoy disponible para nuevas oportunidades."
     },
     "autor": "José Manuel Retana",
