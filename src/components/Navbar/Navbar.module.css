@@ -1,22 +1,32 @@
-li {
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgb(1, 1, 42);
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* UL del menú */
+.menu {
+    display: flex;
+    gap: 30px;
     list-style: none;
 }
 
-.nav {
-    padding: 10px 28px;
-    height: 60px;
-    background: rgb(1, 1, 42);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    gap:"51px";
-    z-index: 800;
+/* Opcional: estilos para los <a> */
+.menu li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color .2s ease;
 }
 
-.menu {
-  display: flex;
-  gap: 25px;
-  list-style: none;
+.menu li a:hover {
+    color: #4ea3ff;
 }

@@ -18,6 +18,7 @@ const Navbar = () => {
                     <li><a onClick={() => scrollToSection("inicio")}>{texto.Inicio}</a></li>
                     <li><a onClick={() => scrollToSection("sobre")}>{texto.Sobre}</a></li>
                     <li><a onClick={() => scrollToSection("experiencia")}>{texto.Experiencia}</a></li>
+                    <li><a onClick={() => scrollToSection("tecnologias")}>{texto.Tecnologias}</a></li>
                     <li><a onClick={() => scrollToSection("habilidades")}>{texto.Habilidades}</a></li>
                     <li><a onClick={() => scrollToSection("formacion")}>{texto.Formacion}</a></li>
                     <li><a onClick={() => scrollToSection("contacto")}>{texto.Contacto}</a></li>
