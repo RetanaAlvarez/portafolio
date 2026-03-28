@@ -1,113 +1,139 @@
 {
-    "Inicio": {
-        "foto": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=8",
-        "hola": "Hola, soy",
-        "name": "Jose Manuel Retana Alvarez",
-        "titulo": "Ingeniero en Sistemas Computacionales",
-        "puesto": "Desarrollador Java | Backend & Full Stack",
-        "descripcion": "Desarrollador Java orientado al backend y microservicios. Experto en migración de servicios SOAP a REST, arquitectura limpia, integración continua y desarrollo de aplicaciones empresariales con Spring Boot. Me apasiona crear soluciones eficientes, escalables y bien estructuradas."
+  "Inicio": {
+    "foto": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=8",
+    "hola": "Hola, soy",
+    "name": "Jose Manuel Retana Alvarez",
+    "titulo": "Ingeniero en Sistemas Computacionales",
+    "puesto": "Desarrollador Java | Backend & Full Stack",
+    "descripcion": "Desarrollador Java orientado al backend y microservicios. Experto en migración de servicios SOAP a REST, arquitectura limpia, integración continua y desarrollo de aplicaciones empresariales con Spring Boot. Me apasiona crear soluciones eficientes, escalables y bien estructuradas."
+  },
+  "Boton": "Contacto",
+  "repositorio": "Ver proyectos",
+  "SobreMi": {
+    "titulo": "Sobre mí",
+    "pregunta": "¿Quién soy?"
+  },
+  "DescripcionSobre": [
+    {
+      "texto": "Soy un desarrollador Java especializado en backend, microservicios y arquitectura de software. Cuento con experiencia construyendo aplicaciones empresariales, migrando sistemas heredados, consumiendo APIs internas y externas, y optimizando procesos mediante buenas prácticas y código limpio."
     },
-    "Boton": "Contacto",
-    "repositorio": "Ver proyectos",
-    "SobreMi": {
-        "titulo": "Sobre mí",
-        "pregunta": "¿Quién soy?"
+    {
+      "texto": "Me considero una persona analítica, autodidacta y orientada a resultados, con pasión por la tecnología y la mejora continua."
+    }
+  ],
+  "TiempoExperiencias": [
+    {
+      "cantidad": "3+",
+      "titulo": "Años de Experiencia"
     },
-    "DescripcionSobre": [
-        {
-            "texto": "Soy un desarrollador Java especializado en backend, microservicios y arquitectura de software. Cuento con experiencia construyendo aplicaciones empresariales, migrando sistemas heredados, consumiendo APIs internas y externas, y optimizando procesos mediante buenas prácticas y código limpio."
-        },
-        {
-            "texto": "Me considero una persona analítica, autodidacta y orientada a resultados, con pasión por la tecnología y la mejora continua."
-        }
-    ],
-    "TiempoExperiencias": [
-        {
-            "cantidad": "3+",
-            "titulo": "Años de Experiencia"
-        },
-        {
-            "cantidad": "4+",
-            "titulo": "Empresas"
-        },
-        {
-            "cantidad": "20+",
-            "titulo": "tecnologías"
-        }
-    ],
-    "LogoSobre": [
-        "codigo",
-        "empresa",
-        "estudio"
-    ],
-    "experiencia_profesional": [
-        {
-            "empresa": "Totalplay (Grupo Salinas)",
-            "puesto": "Programador Jr",
-            "periodo": "Febrero 2025 - Agosto 2025",
-            "descripcion": "Desarrollo de sistemas empresariales con enfoque en backend y migración de servicios.",
-            "responsabilidades": [
-                "Migración de servicios empresariales de SOAP a REST usando Spring Boot y WebClient.",
-                "Implementación de autenticación por token y cifrado RSA.",
-                "Ingeniería inversa para transformar archivos WAR en proyectos Java mantenibles.",
-                "Desarrollo de JSPs, Servlets y módulos de pago optimizados.",
-                "Participación en CI/CD, ambientes DEV/QA y control de versiones en Bitbucket."
-            ]
-        },
-        {
-            "empresa": "Inbursa (Banco)",
-            "puesto": "Programador",
-            "periodo": "Abril 2024 - Mayo 2024",
-            "descripcion": "Desarrollo de microservicios y gestión de proyectos ágiles.",
-            "responsabilidades": [
-                "Desarrollo de microservicios en Java 18 con Maven y Oracle 11g.",
-                "Control de versiones con Git/Bitbucket y uso de Jira para gestión de proyectos.",
-                "Pruebas unitarias, análisis estático con SonarLint y documentación técnica.",
-                "Implementación de metodologías ágiles (Scrum).",
-                "Soporte a despliegues y ambientes de desarrollo en Eclipse."
-            ]
-        },
-        {
-            "empresa": "BBVA Parque Polanco (Banco)",
-            "puesto": "Programador",
-            "periodo": "Agosto 2023 - Noviembre 2023",
-            "descripcion": "Mantenimiento y automatización de sistemas empresariales.",
-            "responsabilidades": [
-                "Creación y mantenimiento de componentes del sistema Control-M.",
-                "Automatización de tareas con scripts Bash en entornos Unix.",
-                "Desarrollo backend con Oracle 11g, Java y Eclipse.",
-                "Gestión de proyectos con Maven y GitHub.",
-                "Uso de Apache Tomcat y Dimensions para despliegue y configuración."
-            ]
-        },
-        {
-            "empresa": "JSOFTGROUP (Consultoría)",
-            "puesto": "Programador",
-            "periodo": "Enero 2021 - Febrero 2023",
-            "descripcion": "Desarrollo full stack de aplicaciones empresariales.",
-            "responsabilidades": [
-                "Desarrollo de microservicios REST con Spring Boot y JPA.",
-                "Creación de modelos UML, diagramas ER y casos de uso.",
-                "Diseño y administración de BD Oracle (procedures, triggers, PL/SQL).",
-                "Desarrollo frontend con Angular, TypeScript y CSS.",
-                "Pruebas unitarias con JUnit, CI con Maven y control de versiones Git."
-            ]
-        },
-        {
-            "empresa": "GHG Coordinadora",
-            "puesto": "Programador",
-            "periodo": "Abril 2021 - Julio 2023",
-            "descripcion": "Sistema de gestión de boletos y administración de pasajeros.",
-            "responsabilidades": [
-                "Sistema de compra de paquetes y boletos con Spring Boot y Angular.",
-                "Modelado UML y diseño de base de datos en Oracle 11g.",
-                "Implementación de microservicios REST (GET, POST, PUT, DELETE).",
-                "Testing con Postman y Swagger.",
-                "Automatización con Bash y despliegue con Tomcat."
-            ]
-        }
-    ],
-    "tecnologias_que_uso": [
+    {
+      "cantidad": "4+",
+      "titulo": "Empresas"
+    },
+    {
+      "cantidad": "20+",
+      "titulo": "tecnologías"
+    }
+  ],
+  "LogoSobre": [
+    "codigo",
+    "empresa",
+    "estudio"
+  ],
+  "experiencia_profesional": [
+    {
+      "empresa": "Totalplay (Grupo Salinas)",
+      "puesto": "Programador Jr",
+      "periodo": "Febrero 2025 - Agosto 2025",
+      "descripcion": "Desarrollo de sistemas empresariales con enfoque en backend y migración de servicios.",
+      "responsabilidades": [
+        "Migración de servicios empresariales de SOAP a REST usando Spring Boot y WebClient.",
+        "Implementación de autenticación por token y cifrado RSA.",
+        "Ingeniería inversa para transformar archivos WAR en proyectos Java mantenibles.",
+        "Desarrollo de JSPs, Servlets y módulos de pago optimizados.",
+        "Participación en CI/CD, ambientes DEV/QA y control de versiones en Bitbucket."
+      ]
+    },
+    {
+      "empresa": "Inbursa (Banco)",
+      "puesto": "Programador",
+      "periodo": "Abril 2024 - Mayo 2024",
+      "descripcion": "Desarrollo de microservicios y gestión de proyectos ágiles.",
+      "responsabilidades": [
+        "Desarrollo de microservicios en Java 18 con Maven y Oracle 11g.",
+        "Control de versiones con Git/Bitbucket y uso de Jira para gestión de proyectos.",
+        "Pruebas unitarias, análisis estático con SonarLint y documentación técnica.",
+        "Implementación de metodologías ágiles (Scrum).",
+        "Soporte a despliegues y ambientes de desarrollo en Eclipse."
+      ]
+    },
+    {
+      "empresa": "BBVA Parque Polanco (Banco)",
+      "puesto": "Programador",
+      "periodo": "Agosto 2023 - Noviembre 2023",
+      "descripcion": "Mantenimiento y automatización de sistemas empresariales.",
+      "responsabilidades": [
+        "Creación y mantenimiento de componentes del sistema Control-M.",
+        "Automatización de tareas con scripts Bash en entornos Unix.",
+        "Desarrollo backend con Oracle 11g, Java y Eclipse.",
+        "Gestión de proyectos con Maven y GitHub.",
+        "Uso de Apache Tomcat y Dimensions para despliegue y configuración."
+      ]
+    },
+    {
+      "empresa": "JSOFTGROUP (Consultoría)",
+      "puesto": "Programador",
+      "periodo": "Enero 2021 - Febrero 2023",
+      "descripcion": "Desarrollo full stack de aplicaciones empresariales.",
+      "responsabilidades": [
+        "Desarrollo de microservicios REST con Spring Boot y JPA.",
+        "Creación de modelos UML, diagramas ER y casos de uso.",
+        "Diseño y administración de BD Oracle (procedures, triggers, PL/SQL).",
+        "Desarrollo frontend con Angular, TypeScript y CSS.",
+        "Pruebas unitarias con JUnit, CI con Maven y control de versiones Git."
+      ]
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "JLE Corte y Grabado Laser",
+      "Descripcion": "Sitio web empresarial completo para negocio de diseños personalizados con catálogo de productos y sistema de contacto.",
+      "Tecnologicas": [
+        "Vercel",
+        "Javascript",
+        "CSS",
+        "React"
+      ],
+      "Funciones": [
+        "Catálogo interactivo de productos",
+        "Formulario de contacto y pedidos personalizados",
+        "Diseño responsive y optimizado",
+        "Deployment automatizado en Vercel"
+      ]
+    },
+    {
+      "nombre": "Leny Yanel - E-commerce",
+      "Descripcion": "Tienda online de esferas de cristal y decoraciones navideñas con gestión de inventario y experiencia de usuario optimizada.",
+      "Tecnologicas": [
+        "Vercel",
+        "Javascript",
+        "CSS",
+        "React"
+      ],
+      "Funciones": [
+        "Interfaz de e-commerce moderna",
+        "Sistema de visualización de productos",
+        "Optimización de imágenes y performance",
+        "SEO optimizado para tienda online"
+      ],
+      "Descripcion_final": "Proyectos desarrollados con tecnologías modernas, deployment automatizado y mejores prácticas de desarrollo web.",
+      "Boton": "Ver Proyectos"
+    }
+  ],
+  "tecnologias_que_uso": [
+    {
+      "Titulo": "Tecnologías que uso",
+      "Tecnologicas": [
         "Java",
         "Spring Boot",
         "Oracle",
@@ -115,127 +141,130 @@
         "Git",
         "Linux",
         "Postman"
-    ],
-    "habilidades_tecnicas": [
-        {
-            "nombre": "Back End",
-            "herramientas": [
-                "Java",
-                "Spring Boot",
-                "Spring MVC",
-                "JPA / Hibernate",
-                "Microservicios REST"
-            ]
-        },
-        {
-            "nombre": "Frontend",
-            "herramientas": [
-                "Angular",
-                "React",
-                "TypeScript",
-                "Bootstrap"
-            ]
-        },
-        {
-            "nombre": "Base de Datos",
-            "herramientas": [
-                "Oracle",
-                "MySQL",
-                "PostgreSQL"
-            ]
-        },
-        {
-            "nombre": "Herramientas",
-            "herramientas": [
-                "Git",
-                "GitHub",
-                "Maven",
-                "Postman",
-                "Swagger",
-                "Jira"
-            ]
-        },
-        {
-            "nombre": "Sistemas Operativos",
-            "herramientas": [
-                "Windows",
-                "Linux (Ubuntu, Mint, Server)"
-            ]
-        },
-        {
-            "nombre": "Otras Tecnologias",
-            "herramientas": [
-                "SOAP",
-                "REST",
-                "JSON",
-                "XML",
-                "JUnit",
-                "Apache Tomcat"
-            ]
-        }
-    ],
-    "certificaciones_cursos": [
-        {
-            "nombre": "Certificaciones y/o Certificaciones",
-            "cursos": [
-                "Programación fundamentos de lenguaje Java y POO",
-                "Spring Framework MVC, CORE, DAO, ORM, CONTEXT",
-                "Spring Boot Microservicios REST",
-                "Spring Boot Thymeleaf y Spring Boot BATCH",
-                "Hibernate y JPA",
-                "CCNA/7: Redes empresariales",
-                "Seguridad informática: IPv7: Switching, Routing and Wireless Essentials",
-                "NDG Linux Unhatched"
-            ]
-        }
-    ],
-    "formacion_academica": {
-        "nombre": "Formación Académica",
-        "carrera": "Ingeniería en Sistemas Computacionales",
-        "institucion": "Tecnológico de Estudios Superiores de Jocotitlán",
-        "periodo": "2018 - 2023"
+      ]
+    }
+  ],
+  "habilidades_tecnicas": [
+    {
+      "nombre": "Back End",
+      "herramientas": [
+        "Java",
+        "Spring Boot",
+        "Spring MVC",
+        "JPA / Hibernate",
+        "Microservicios REST"
+      ]
     },
-    "FormacionIcon": [
-        "World",
-        "Location"
+    {
+      "nombre": "Frontend",
+      "herramientas": [
+        "Angular",
+        "React",
+        "JavaScript",
+        "Bootstrap"
+      ]
+    },
+    {
+      "nombre": "Base de Datos",
+      "herramientas": [
+        "Oracle",
+        "MySQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "nombre": "Herramientas",
+      "herramientas": [
+        "Git",
+        "GitHub",
+        "Maven",
+        "Postman",
+        "Swagger",
+        "Jira"
+      ]
+    },
+    {
+      "nombre": "Sistemas Operativos",
+      "herramientas": [
+        "Windows",
+        "Linux (Ubuntu, Mint, Server)"
+      ]
+    },
+    {
+      "nombre": "Otras Tecnologias",
+      "herramientas": [
+        "SOAP",
+        "REST",
+        "JSON",
+        "XML",
+        "JUnit",
+        "Apache Tomcat"
+      ]
+    }
+  ],
+  "certificaciones_cursos": [
+    {
+      "nombre": "Certificaciones y/o Certificaciones",
+      "cursos": [
+        "Programación fundamentos de lenguaje Java y POO",
+        "Spring Framework MVC, CORE, DAO, ORM, CONTEXT",
+        "Spring Boot Microservicios REST",
+        "Spring Boot Thymeleaf y Spring Boot BATCH",
+        "Hibernate y JPA",
+        "CCNA/7: Redes empresariales",
+        "Seguridad informática: IPv7: Switching, Routing and Wireless Essentials",
+        "NDG Linux Unhatched"
+      ]
+    }
+  ],
+  "formacion_academica": {
+    "nombre": "Formación Académica",
+    "carrera": "Ingeniería en Sistemas Computacionales",
+    "institucion": "Tecnológico de Estudios Superiores de Jocotitlán",
+    "periodo": "2018 - 2023"
+  },
+  "FormacionIcon": [
+    "World",
+    "Location"
+  ],
+  "FormacionText": {
+    "titulo": [
+      "Inglés Técnico:",
+      "Nivel Intermedio"
     ],
-    "FormacionText": {
-        "titulo": [
-            "Inglés Técnico:",
-            "Nivel Intermedio"
-        ],
-        "descripcion": [
-            "Ubicación:",
-            "México"
-        ]
-    },
-    "idiomas": {
-        "ingles": "Técnico - Intermedio"
-    },
-    "ubicacion": "México",
-    "Contacto": {
-        "titulo": "Contacto",
-        "Referencias": [
-            {
-                "nombre": "Email",
-                "contenido": "retanaalvarez@gmail.com"
-            },
-            {
-                "nombre": "Ubicación",
-                "contenido": "Ciudad de México, México"
-            },
-            {
-                "nombre": "LinkedIn",
-                "contenido": "Agregar perfil de LinkedIn"
-            },
-            {
-                "nombre": "Whatsapp",
-                "contenido": "(52) 712 193 3662"
-            }
-        ],
-        "mensaje": "¿Interesado en trabajar juntos? Estoy disponible para nuevas oportunidades."
-    },
-    "autor": "José Manuel Retana",
-    "rol": "Desarrollador Java Backend & Full Stack",
-    "copyright": "© 2024"
+    "descripcion": [
+      "Ubicación:",
+      "México"
+    ]
+  },
+  "idiomas": {
+    "ingles": "Técnico - Intermedio"
+  },
+  "ubicacion": "México",
+  "Contacto": {
+    "titulo": "Contacto",
+    "Referencias": [
+      {
+        "nombre": "Email",
+        "contenido": "retanaalvarez@gmail.com"
+      },
+      {
+        "nombre": "Ubicación",
+        "contenido": "Ciudad de México, México"
+      },
+      {
+        "nombre": "LinkedIn",
+        "contenido": "https://www.linkedin.com/in/jose-manuel-retana-%C3%A1lvarez-8858b7246/"
+      },
+      {
+        "nombre": "Whatsapp",
+        "contenido": "(52) 712 193 3662"
+      }
+    ],
+    "mensaje": "¿Interesado en trabajar juntos? Estoy disponible para nuevas oportunidades.",
+
+  },
+  "autor": "José Manuel Retana",
+  "rol": "Desarrollador Java Backend & Full Stack",
+  "copyright": "© 2024"
 }
