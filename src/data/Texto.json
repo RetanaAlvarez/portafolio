@@ -94,42 +94,47 @@
       ]
     }
   ],
-  "proyectos": [
-    {
-      "nombre": "JLE Corte y Grabado Laser",
-      "Descripcion": "Sitio web empresarial completo para negocio de diseños personalizados con catálogo de productos y sistema de contacto.",
-      "Tecnologicas": [
-        "Vercel",
-        "Javascript",
-        "CSS",
-        "React"
-      ],
-      "Funciones": [
-        "Catálogo interactivo de productos",
-        "Formulario de contacto y pedidos personalizados",
-        "Diseño responsive y optimizado",
-        "Deployment automatizado en Vercel"
-      ]
-    },
-    {
-      "nombre": "Leny Yanel - E-commerce",
-      "Descripcion": "Tienda online de esferas de cristal y decoraciones navideñas con gestión de inventario y experiencia de usuario optimizada.",
-      "Tecnologicas": [
-        "Vercel",
-        "Javascript",
-        "CSS",
-        "React"
-      ],
-      "Funciones": [
-        "Interfaz de e-commerce moderna",
-        "Sistema de visualización de productos",
-        "Optimización de imágenes y performance",
-        "SEO optimizado para tienda online"
-      ],
-      "Descripcion_final": "Proyectos desarrollados con tecnologías modernas, deployment automatizado y mejores prácticas de desarrollo web.",
-      "Boton": "Ver Proyectos"
-    }
-  ],
+  "proyectos": {
+    "titulo": "Proyectos Destacados",
+    "lista": [
+      {
+        "nombre": "JLE Corte y Grabado Laser",
+        "Descripcion": "Sitio web empresarial completo para negocio de diseños personalizados con catálogo de productos y sistema de contacto.",
+        "Tecnologicas": [
+          "Vercel",
+          "Javascript",
+          "CSS",
+          "React"
+        ],
+        "Funciones": [
+          "Catálogo interactivo de productos",
+          "Formulario de contacto y pedidos personalizados",
+          "Diseño responsive y optimizado",
+          "Deployment automatizado en Vercel"
+        ],
+        "url": "https://disenosjle.vercel.app/"
+      },
+      {
+        "nombre": "Leny Yanel - E-commerce",
+        "Descripcion": "Tienda online de esferas de cristal y decoraciones navideñas con gestión de inventario y experiencia de usuario optimizada.",
+        "Tecnologicas": [
+          "Vercel",
+          "Javascript",
+          "CSS",
+          "React"
+        ],
+        "Funciones": [
+          "Interfaz de e-commerce moderna",
+          "Sistema de visualización de productos",
+          "Optimización de imágenes y performance",
+          "SEO optimizado para tienda online"
+        ],
+        "url": "https://lenyyanel.vercel.app/"
+      }
+    ],
+    "descripcion_final": "Proyectos desarrollados con tecnologías modernas, deployment automatizado y mejores prácticas de desarrollo web.",
+    "boton": "Ver Proyectos"
+  },
   "tecnologias_que_uso": [
     {
       "Titulo": "Tecnologías que uso",
@@ -140,68 +145,72 @@
         "React",
         "Git",
         "Linux",
-        "Postman"
-      ]
-    }
-  ],
-  "habilidades_tecnicas": [
-    {
-      "nombre": "Back End",
-      "herramientas": [
-        "Java",
-        "Spring Boot",
-        "Spring MVC",
-        "JPA / Hibernate",
-        "Microservicios REST"
-      ]
-    },
-    {
-      "nombre": "Frontend",
-      "herramientas": [
-        "Angular",
-        "React",
-        "JavaScript",
-        "Bootstrap"
-      ]
-    },
-    {
-      "nombre": "Base de Datos",
-      "herramientas": [
-        "Oracle",
-        "MySQL",
-        "PostgreSQL"
-      ]
-    },
-    {
-      "nombre": "Herramientas",
-      "herramientas": [
-        "Git",
-        "GitHub",
-        "Maven",
         "Postman",
-        "Swagger",
-        "Jira"
-      ]
-    },
-    {
-      "nombre": "Sistemas Operativos",
-      "herramientas": [
-        "Windows",
-        "Linux (Ubuntu, Mint, Server)"
-      ]
-    },
-    {
-      "nombre": "Otras Tecnologias",
-      "herramientas": [
-        "SOAP",
-        "REST",
-        "JSON",
-        "XML",
-        "JUnit",
-        "Apache Tomcat"
+        "swagger"
       ]
     }
   ],
+  "habilidades_tecnicas": {
+    "titulo": "Habilidades Técnicas",
+    "lista": [
+      {
+        "nombre": "Back End",
+        "herramientas": [
+          "Java",
+          "Spring Boot",
+          "Spring MVC",
+          "JPA / Hibernate",
+          "Microservicios REST"
+        ]
+      },
+      {
+        "nombre": "Frontend",
+        "herramientas": [
+          "Angular",
+          "React",
+          "JavaScript",
+          "Bootstrap"
+        ]
+      },
+      {
+        "nombre": "Base de Datos",
+        "herramientas": [
+          "Oracle",
+          "MySQL",
+          "PostgreSQL"
+        ]
+      },
+      {
+        "nombre": "Herramientas",
+        "herramientas": [
+          "Git",
+          "GitHub",
+          "Maven",
+          "Postman",
+          "Swagger",
+          "Jira"
+        ]
+      },
+      {
+        "nombre": "Sistemas Operativos",
+        "herramientas": [
+          "Windows",
+          "Linux (Ubuntu, Mint, Server)"
+        ]
+      },
+      {
+        "nombre": "Otras Tecnologias",
+        "herramientas": [
+          "SOAP",
+          "REST",
+          "JSON",
+          "XML",
+          "JUnit",
+          "Apache Tomcat"
+        ]
+      }
+    ]
+  },
   "certificaciones_cursos": [
     {
       "nombre": "Certificaciones y/o Certificaciones",
@@ -218,51 +227,48 @@
     }
   ],
   "formacion_academica": {
-    "nombre": "Formación Académica",
+    "titulo": "Formación Académica",
     "carrera": "Ingeniería en Sistemas Computacionales",
     "institucion": "Tecnológico de Estudios Superiores de Jocotitlán",
-    "periodo": "2018 - 2023"
-  },
-  "FormacionIcon": [
-    "World",
-    "Location"
-  ],
-  "FormacionText": {
-    "titulo": [
-      "Inglés Técnico:",
-      "Nivel Intermedio"
-    ],
-    "descripcion": [
-      "Ubicación:",
-      "México"
+    "periodo": "2018 - 2023",
+    "detalles": [
+      {
+        "icono": "world",
+        "titulo": "Inglés Técnico",
+        "descripcion": "Nivel Intermedio"
+      },
+      {
+        "icono": "location",
+        "titulo": "Ubicación",
+        "descripcion": "México"
+      }
     ]
   },
-  "idiomas": {
-    "ingles": "Técnico - Intermedio"
-  },
-  "ubicacion": "México",
   "Contacto": {
     "titulo": "Contacto",
+    "mensaje": "¿Interesado en trabajar juntos? Estoy disponible para nuevas oportunidades.",
     "Referencias": [
       {
         "nombre": "Email",
-        "contenido": "retanaalvarez@gmail.com"
+        "contenido": "retanaalvarez@gmail.com",
+        "icono": "email"
       },
       {
         "nombre": "Ubicación",
-        "contenido": "Ciudad de México, México"
+        "contenido": "Edomex, México",
+        "icono": "location"
       },
       {
         "nombre": "LinkedIn",
-        "contenido": "https://www.linkedin.com/in/jose-manuel-retana-%C3%A1lvarez-8858b7246/"
+        "contenido": "https://www.linkedin.com/in/jose-manuel-retana",
+        "icono": "linkedin"
       },
       {
         "nombre": "Whatsapp",
-        "contenido": "(52) 712 193 3662"
+        "contenido": "(52) 712 193 3662",
+        "icono": "whatsapp"
       }
-    ],
-    "mensaje": "¿Interesado en trabajar juntos? Estoy disponible para nuevas oportunidades.",
-
+    ]
   },
   "autor": "José Manuel Retana",
   "rol": "Desarrollador Java Backend & Full Stack",
