@@ -2,12 +2,9 @@
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, 0.87);
     background-color: rgb(1, 1, 42);
+    color: #ffffff;
 }
 
-*{
-    background-color: rgb(1, 1, 42);
-    color: rgb(249 249 249 / 0.71);
-}
 a {
     font-weight: 500;
     text-decoration: inherit;
@@ -16,19 +13,4 @@ a {
 a:hover {
     color: #ffffff;
     font-weight: 900;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-
-    a:hover {
-        color: #747bff;
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
 }
