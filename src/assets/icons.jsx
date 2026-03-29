@@ -11,4 +11,4 @@ export const techIcons = {
   linux: () => <FaLinux color="#f6c400" size={40} />,
   postman: () => <SiPostman color="#ff8c00" size={40} />,
   swagger:() => <SiSwagger color="#00e676" size={40}/>
-};
+}; 
