@@ -7,7 +7,7 @@ import Habilidades from "../Habilidades/Habilidades"
 import Inicio from "../Inicio/Inicio"
 import Sobre from "../Sobre/Sobre"
 import Tecnologias from "../Tecnologias/Tecnologias"
-import Proyecto from "../Proyectos/Proyectos"
+import Proyectos from "../Proyectos/Proyectos"
 
 import styles from "./Home.module.css"
 
@@ -19,7 +19,7 @@ function Home() {
         <Inicio />
         <Sobre />
         <Experiencia />
-        <Proyecto />
+        <Proyectos />
         <Tecnologias />
         <Habilidades />
         <Formacion />
