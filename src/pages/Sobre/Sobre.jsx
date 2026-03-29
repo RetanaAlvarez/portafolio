@@ -1,6 +1,5 @@
 import { FaCode, FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
-import Experiencia from '../Experiencia/Experiencia';
 import texto from '../../data/Texto.json';
 import styles from './Sobre.module.css';
 
@@ -37,7 +36,6 @@ function Sobre() {
         </div>
       </section>
 
-      <Experiencia />
     </>
   );
 }

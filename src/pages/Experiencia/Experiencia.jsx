@@ -2,8 +2,6 @@ import { FaBriefcase, FaCalendarAlt, FaCircle } from "react-icons/fa";
 
 import texto from '../../data/Texto.json';
 
-import Tecnologias from '../Tecnologias/Tecnologias';
-
 import styles from './Experiencia.module.css';
 
 function Experiencia() {
@@ -16,7 +14,6 @@ function Experiencia() {
           {texto.experiencia_profesional.map((job, index) => (
             <div key={index} className={styles.card}>
 
-              {/* FILA SUPERIOR: ICONO + EMPRESA + FECHA */}
               <div className={styles.topRow}>
 
                 <div className={styles.iconEmpresa}>
@@ -35,10 +32,8 @@ function Experiencia() {
 
               </div>
 
-              {/* DESCRIPCIÓN GENERAL */}
               <p className={styles.descripcion}>{job.descripcion}</p>
 
-              {/* LISTA DE RESPONSABILIDADES */}
               <ul>
                 {job.responsabilidades.map((r, i) => (
                   <li key={i}>{r}</li>
@@ -49,7 +44,6 @@ function Experiencia() {
           ))}
         </div>
       </section>
-      {/* <Tecnologias/> */}
     </>
   )
 }

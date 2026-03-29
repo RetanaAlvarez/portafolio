@@ -1,7 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar';
 
-import Sobre from '../Sobre/Sobre';
-
 import texto from '../../data/Texto.json';
 
 import styles from './Inicio.module.css';
@@ -21,7 +19,6 @@ function inicio() {
           </div>
         </div>
       </section>
-      <Sobre />
     </>
   )
 }

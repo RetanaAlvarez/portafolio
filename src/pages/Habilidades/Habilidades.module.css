@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #4da3ff;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* GRID PRINCIPAL */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+}
+
+/* BADGES */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  background: rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* CERTIFICACIONES */
+.certificaciones {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  text-align: left;
+}
+
+.certItem {
+  font-size: 14px;
+}

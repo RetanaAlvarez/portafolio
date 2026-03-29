@@ -2,22 +2,29 @@ import data from "../../data/Texto.json";
 
 import { techIcons } from "../../assets/icons";
 
-import Habilidades from '../Habilidades/Habilidades';
+import styles from "./Tecnologias.module.css";
 function Tecnologias() {
   return (
-    <>
-      <section id="tecnologias">
-        <div className="tech-grid">
-          {data.tecnologias_que_uso.map((tech, i) => (
-            <div key={i} className="tech-card">
-              {techIcons[tech] && techIcons[tech]()}
+    <section id="tecnologias" className={styles.container}>
+
+      <h2 className={styles.title}>Tecnologías que uso</h2>
+
+      <div className={styles.grid}>
+        {data.tecnologias_que_uso?.[0]?.Tecnologicas.map((tech) => {
+          const key = tech.toLowerCase();
+
+          return (
+            <div key={tech} className={styles.card}>
+              <div className={styles.icon}>
+                {techIcons[key]?.()}
+              </div>
               <p>{tech}</p>
             </div>
-          ))}
-        </div>
-      </section>
-      <Habilidades />
-    </>
+          );
+        })}
+      </div>
+
+    </section>
   );
 }
 

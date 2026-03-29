@@ -1,0 +1,45 @@
+.container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #4da3ff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255,255,255,0.04);
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(77,163,255,0.3);
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}

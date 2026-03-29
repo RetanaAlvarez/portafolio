@@ -1,40 +1,53 @@
-import Contacto from "../Contacto/Contacto"
-
 import texto from '../../data/Texto.json';
-
 import { formacionIcons } from '../../assets/formacionIcons';
+import styles from './Formacion.module.css';
 
 function Formacion() {
+  const data = texto.formacion_academica;
+
   return (
-    <>
-      <section id='formacion'>
-        <div>
-          <h1>{texto.formacion_academica.nombre}</h1>
-          <h3>{texto.formacion_academica.carrera}</h3>
-          <h4>{texto.formacion_academica.institucion}</h4>
-          <p>{texto.formacion_academica.periodo}</p>
+    <section id="formacion" className={styles.container}>
+
+      <h2 className={styles.title}>{data.titulo}</h2>
+      <div className={styles.card}>
+
+        <div className={styles.header}>
+          <div className={styles.iconMain}>
+            {formacionIcons.school?.()}
+          </div>
+
+          <div>
+            <h3>{data.carrera}</h3>
+            <p className={styles.institucion}>{data.institucion}</p>
+            <span className={styles.periodo}>{data.periodo}</span>
+          </div>
         </div>
 
+        <hr className={styles.divider} />
 
-        <div className="forma-grid">
-          {texto.FormacionIcon.map((icon, i) => (
-            <div key={i} className="icon-card">
-              {formacionIcons[icon] && formacionIcons[icon]()}
+        <div className={styles.detalles}>
+          {data.detalles.map((item) => {
+            const key = item.icono;
 
-              <ul>
-                {texto.FormacionText.titulo.map((titulo,i) => (
-                  <li key={i}>
-                    <strong>{titulo}</strong> {texto.FormacionText.descripcion['i']}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+            return (
+              <div key={key} className={styles.item}>
+                <div className={styles.icon}>
+                  {formacionIcons[key]?.()}
+                </div>
+
+                <div>
+                  <strong>{item.titulo}</strong>
+                  <p>{item.descripcion}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </section>
-      <Contacto />
-    </>
-  )
+
+      </div>
+
+    </section>
+  );
 }
 
 export default Formacion;
