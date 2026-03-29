@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Experiencia from "../pages/Experiencia/Experiencia";
 import Habilidades from "../pages/Habilidades/Habilidades";
-import Inicio from "../pages/Inicio/Inicio";
+import Home from "../pages/Home/Home";
 import Sobre from '../pages/Sobre/Sobre';
 import Formacion from "../pages/Formacion/Formacion"
 
@@ -11,12 +11,8 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="*" element={<Inicio />} />
-                <Route path="/sobre" element={<Sobre />} />
-                <Route path="/experiencia" element={<Experiencia />} />
-                <Route path="/habilidades" element={<Habilidades />} />
-                <Route path="/formacion" element={<Formacion />} />
+                <Route path="/" element={<Home />} />
+                <Route path="*" element={<Home />} />
             </Routes>
         </BrowserRouter>
     )
