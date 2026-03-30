@@ -1,13 +1,10 @@
-import Navbar from '../../components/Navbar/Navbar';
-
 import texto from '../../data/Texto.json';
 
 import styles from './Inicio.module.css';
 
-function inicio() {
+function Inicio() {
   return (
     <>
-      <Navbar />
       <section id='inicio'>
         <div className={styles.home}>
           <img src={texto.Inicio.foto} alt="MiFoto" />
@@ -23,4 +20,4 @@ function inicio() {
   )
 }
 
-export default inicio
+export default Inicio

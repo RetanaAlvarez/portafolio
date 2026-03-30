@@ -2,51 +2,125 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 60px 20px;
 }
+
 h1 {
-    font-size: 48px;
-    margin-bottom: 40px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4da3ff;
+    margin: 10px auto 0;
 }
 
 .expContainer {
-    background-color: rgb(1, 1, 42);
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 25px;
 }
 
 .card {
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 16px;
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.03); 
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.topRow{
+.topRow {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.iconEmpresa{
-    padding: 14px;
-    border-radius: 12px;
-    display: flex;
-    font-size: 28px;
-    color: #4da3ff;
-}
-
-.infoEmpresa{
-    flex: 1;
-    margin-left: 20px;
-}
-
-.infoEmpresa h2{
+.iconEmpresa {
+    padding: 10px;
+    border-radius: 10px;
     font-size: 22px;
-    margin-bottom: 5px;
 }
 
+.infoEmpresa {
+    margin-left: 0;
+}
+
+.infoEmpresa h2 {
+    font-size: 18px;
+}
+
+.infoEmpresa span {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.infoEmpresa h3 {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-top: 4px;
+}
+
+.card p,
+.card ul {
+    margin-left: 50px;
+}
+
+@media (min-width: 1024px) {
+
+    .expContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .expContainer {
+        gap: 40px;
+    }
+
+    .card {
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .topRow {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .iconEmpresa {
+        padding: 14px;
+        font-size: 28px;
+    }
+
+    .infoEmpresa {
+        margin-left: 20px;
+    }
+
+    .infoEmpresa h2 {
+        font-size: 22px;
+    }
+
+    .infoEmpresa span {
+        font-size: 16px;
+    }
+}
