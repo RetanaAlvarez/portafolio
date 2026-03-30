@@ -11,14 +11,16 @@
     align-items: center;
 }
 
-/* UL del menú */
+.hamburger {
+    display: none;
+}
+
 .menu {
     display: flex;
     gap: 30px;
     list-style: none;
 }
 
-/* Opcional: estilos para los <a> */
 .menu li a {
     color: white;
     text-decoration: none;
@@ -29,4 +31,29 @@
 
 .menu li a:hover {
     color: #4ea3ff;
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgb(1, 1, 42);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        display: none;
+    }
+
+    .menu.active {
+        display: flex;
+    }
 }
