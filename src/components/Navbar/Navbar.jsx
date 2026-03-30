@@ -25,7 +25,7 @@ const Navbar = () => {
                 className={styles.hamburger}
                 onClick={() => setMenuOpen(!menuOpen)}
             >
-                ☰
+                {menuOpen ? "✕" : "☰"}
             </div>
 
             <ul className={`${styles.menu} ${menuOpen ? styles.active : ""}`}>
@@ -38,6 +38,7 @@ const Navbar = () => {
                 <li><a onClick={() => handleClick("formacion")}>{texto.Formacion}</a></li>
                 <li><a onClick={() => handleClick("contacto")}>{texto.Contacto}</a></li>
             </ul>
+            {menuOpen && <div className={styles.overlay} onClick={() => setMenuOpen(false)}></div>}
         </nav>
     );
 };

@@ -3,21 +3,53 @@
     top: 0;
     width: 100%;
     z-index: 999;
-    background: rgb(1, 1, 42);
+
+    background: rgba(1, 1, 42, 0.7);
+    backdrop-filter: blur(10px);
+
     padding: 20px 40px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
+/* BOTÓN */
 .hamburger {
-    display: none;
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
+/* MENU MOBILE (oculto por defecto) */
 .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+
+    background: rgba(1, 1, 42, 0.95);
+    backdrop-filter: blur(15px);
+
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 30px;
+    gap: 25px;
+
+    transform: translateX(100%); /* 🔥 oculto */
+    transition: transform 0.3s ease;
+}
+
+/* CUANDO ESTÁ ACTIVO */
+.menu.active {
+    transform: translateX(0);
+}
+
+/* LINKS */
+.menu li {
     list-style: none;
 }
 
@@ -26,34 +58,41 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
-    transition: color .2s ease;
+    position: relative;
 }
 
-.menu li a:hover {
-    color: #4ea3ff;
+/* EFECTO HOVER PRO */
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #4da3ff;
+    transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
 
     .hamburger {
-        display: block;
-    }
-
-    .menu {
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background: rgb(1, 1, 42);
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 20px 0;
-
         display: none;
     }
 
-    .menu.active {
-        display: flex;
+    .menu {
+        position: static;
+        transform: none;
+        height: auto;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 30px;
+        background: transparent;
     }
 }
