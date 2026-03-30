@@ -19,8 +19,8 @@
 }
 
 .home img {
-    width: 350px;
-    max-width: 300px;
+    max-height: 380px;
+    max-width: 260px;
     margin: 0 auto;
 
     border-radius: 50%;
