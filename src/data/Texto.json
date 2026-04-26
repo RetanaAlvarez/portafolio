@@ -97,38 +97,22 @@
     "titulo": "Proyectos Destacados",
     "lista": [
       {
-        "nombre": "JLE Corte y Grabado Laser",
-        "Descripcion": "Sitio web empresarial completo para negocio de diseños personalizados con catálogo de productos y sistema de contacto.",
-        "Tecnologicas": [
-          "Vercel",
-          "Javascript",
-          "CSS",
-          "React"
+        "nombre": "WebDev Pro Studio",
+        "descripcion": "Landing page profesional diseñada para convertir visitantes en clientes, con sistema de recomendación de planes y contacto directo por WhatsApp.",
+        "tecnologias": [
+          "React",
+          "JavaScript",
+          "CSS Modules",
+          "Vercel"
         ],
-        "Funciones": [
-          "Catálogo interactivo de productos",
-          "Formulario de contacto y pedidos personalizados",
-          "Diseño responsive y optimizado",
-          "Deployment automatizado en Vercel"
+        "funciones": [
+          "Sección de planes optimizada para conversión",
+          "Quiz interactivo para recomendar servicios",
+          "Formulario conectado a WhatsApp",
+          "Diseño responsive adaptado a móviles",
+          "Carga rápida y optimización de rendimiento"
         ],
-        "url": "https://disenosjle.vercel.app/"
-      },
-      {
-        "nombre": "Leny Yanel - E-commerce",
-        "Descripcion": "Tienda online de esferas de cristal y decoraciones navideñas con gestión de inventario y experiencia de usuario optimizada.",
-        "Tecnologicas": [
-          "Vercel",
-          "Javascript",
-          "CSS",
-          "React"
-        ],
-        "Funciones": [
-          "Interfaz de e-commerce moderna",
-          "Sistema de visualización de productos",
-          "Optimización de imágenes y performance",
-          "SEO optimizado para tienda online"
-        ],
-        "url": "https://lenyyanel.vercel.app/"
+        "url": "https://webdevpro-studio.vercel.app/"
       }
     ],
     "descripcion_final": "Proyectos desarrollados con tecnologías modernas, deployment automatizado y mejores prácticas de desarrollo web.",
@@ -271,5 +255,5 @@
   },
   "autor": "José Manuel Retana",
   "rol": "Desarrollador Java Backend & Full Stack",
-  "copyright": "© 2024"
+  "copyright": "© "
 }

@@ -23,17 +23,17 @@ function Proyectos() {
             <h3>{proyecto.nombre}</h3>
 
             <div className={styles.techList}>
-              {proyecto.Tecnologicas.map((tech, j) => (
+              {proyecto.tecnologias.map((tech, j) => (
                 <span key={j} className={styles.techItem}>
                   {tech}
                 </span>
               ))}
             </div>
 
-            <p>{proyecto.Descripcion}</p>
+            <p>{proyecto.descripcion}</p>
 
             <ul className={styles.funcList}>
-              {proyecto.Funciones.map((func, k) => (
+              {proyecto.funciones.map((func, k) => (
                 <li key={k}>{func}</li>
               ))}
             </ul>
