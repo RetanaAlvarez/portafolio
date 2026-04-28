@@ -43,6 +43,7 @@ h1 {
 
 .metricas {
     display: flex;
+    padding: 1rem;
     justify-content: space-around;
     margin-top: 40px;
 }
