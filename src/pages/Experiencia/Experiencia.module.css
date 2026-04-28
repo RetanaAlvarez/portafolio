@@ -132,7 +132,6 @@
     color: #9ca3af;
 }
 
-/* 🎨 BULLETS MULTICOLOR */
 .item:nth-child(1) .dot {
     background: #22c55e;
     box-shadow: 0 0 6px #22c55e;
@@ -163,7 +162,6 @@
     box-shadow: 0 0 6px #eab308;
 }
 
-/* ✨ ANIMACIÓN */
 @keyframes pulseDot {
     0% {
         transform: scale(1);
@@ -183,7 +181,6 @@ body {
     background: radial-gradient(circle at top, #1e293b, #0f172a);
 }
 
-/* 📱 TABLET */
 @media (min-width: 768px) {
 
     #experiencia h1 {
@@ -224,7 +221,6 @@ body {
     }
 }
 
-/* 💻 DESKTOP */
 @media (min-width: 1024px) {
 
     #experiencia {

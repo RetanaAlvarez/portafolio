@@ -10,14 +10,12 @@ function Proyectos() {
 
       <div className={styles.grid}>
 
-        {/* CARD GRANDE */}
         {proyectos[0] && (
           <div className={`${styles.card} ${styles.big}`}>
             <Card proyecto={proyectos[0]} />
           </div>
         )}
 
-        {/* CARDS ABAJO */}
         <div className={styles.row}>
           {proyectos.slice(1).map((p, i) => (
             <div key={i} className={styles.card}>

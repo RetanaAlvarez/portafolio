@@ -11,7 +11,7 @@ function Footer() {
       </p>
 
       <span className={style.version}>
-        v1.0.6
+        v1.0.7
       </span>
     </footer>
   );

@@ -12,7 +12,6 @@ export function Experiencia() {
         {experiencias.map((exp, index) => (
           <div key={index} className={styles.card}>
 
-            {/* HEADER */}
             <div className={styles.header}>
 
               <div className={styles.left}>
@@ -26,10 +25,8 @@ export function Experiencia() {
 
             </div>
 
-            {/* DESCRIPCIÓN */}
             <p>{exp.descripcion}</p>
 
-            {/* LISTA */}
             <div className={styles.grid}>
               {exp.responsabilidades.map((item, i) => (
                 <div key={i} className={styles.item}>
