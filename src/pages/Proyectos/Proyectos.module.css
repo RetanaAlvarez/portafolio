@@ -1,72 +1,175 @@
-.container {
-  padding: 80px 20px;
-  text-align: center;
-}
+  .container {
+    padding: 80px 20px;
+    text-align: center;
+  }
 
-.image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px 12px 0 0;
-}
+  .title {
+    font-size: 42px;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 
-.title {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: white;
-}
+  .grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
 
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 15px;
-  text-align: left;
-  transition: 0.3s;
-}
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(59, 130, 246, 0.2);
+  }
 
-.card:hover {
-  transform: translateY(-5px);
-}
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+  }
 
-.techList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 10px 0;
-}
+  .row .card:nth-child(1)::before {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+  }
 
-.techItem {
-  background: rgba(77,163,255,0.2);
-  color: #4da3ff;
-  padding: 5px 10px;
-  border-radius: 10px;
-  font-size: 12px;
-}
+  .row .card:nth-child(2)::before {
+    background: linear-gradient(to right, #22c55e, #10b981);
+  }
 
-.funcList {
-  margin-top: 10px;
-  padding-left: 15px;
-}
+  .big {
+    padding: 30px;
+  }
 
-.button {
-  display: block;
-  margin-top: 15px;
-  background: linear-gradient(90deg, #4da3ff, #2563eb);
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  text-decoration: none;
-  text-align: center;
-}
+  .row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
-text{
-  align-items: center;
-}
+  .imageWrapper {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+    background: #0f172a;
+  }
+
+  .imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.05);
+  }
+
+  .imageWrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    text-decoration: none;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  }
+
+  .overlayBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+
+  .overlayBtn:hover {
+    background: #3b82f6;
+  }
+
+  .card h3 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    color: #9ca3af;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+  }
+
+  .techItem {
+    background: rgba(255, 255, 255, 0.08);
+    color: #cbd5f5;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+  }
+
+  .funcList {
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+
+  .funcList li {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: 768px) {
+    .row {
+      flex-direction: row;
+    }
+
+    .row .card {
+      flex: 1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding: 100px 40px;
+    }
+
+    .big {
+      padding: 35px;
+    }
+  }
