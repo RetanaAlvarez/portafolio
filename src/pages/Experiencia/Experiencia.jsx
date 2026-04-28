@@ -1,51 +1,47 @@
-import { FaBriefcase, FaCalendarAlt, FaCircle } from "react-icons/fa";
+import styles from "./Experiencia.module.css";
+import data from "../../data/Texto.json";
 
-import texto from '../../data/Texto.json';
+export function Experiencia() {
+  const experiencias = data.experiencia_profesional;
 
-import styles from './Experiencia.module.css';
-
-function Experiencia() {
   return (
-    <>
-      <section id="experiencia">
-        <h1>Experiencia Profesional</h1>
+    <section id="experiencia">
+      <h1>Experiencia Profesional</h1>
 
-        <div className={styles.expContainer}>
-          {texto.experiencia_profesional.map((job, index) => (
-            <div key={index} className={styles.card}>
+      <div className={styles.expContainer}>
+        {experiencias.map((exp, index) => (
+          <div key={index} className={styles.card}>
 
-              <div className={styles.topRow}>
+            {/* HEADER */}
+            <div className={styles.header}>
 
-                <div className={styles.iconEmpresa}>
-                  <FaBriefcase />
-                </div>
-
-                <div className={styles.infoEmpresa}>
-                  <h2>{job.empresa}</h2>
-                  <h3>{job.puesto}</h3>
-                </div>
-
-                <div className={styles.fechaBox}>
-                  <FaCalendarAlt className={styles.fechaIcon} />
-                  <span>{job.periodo}</span>
-                </div>
-
+              <div className={styles.left}>
+                <h2>{exp.puesto}</h2>
+                <span>{exp.empresa}</span>
               </div>
 
-              <p className={styles.descripcion}>{job.descripcion}</p>
-
-              <ul>
-                {job.responsabilidades.map((r, i) => (
-                  <li key={i}>{r}</li>
-                ))}
-              </ul>
+              <div className={styles.right}>
+                <span>{exp.periodo}</span>
+              </div>
 
             </div>
-          ))}
-        </div>
-      </section>
-    </>
-  )
-}
 
-export default Experiencia;
+            {/* DESCRIPCIÓN */}
+            <p>{exp.descripcion}</p>
+
+            {/* LISTA */}
+            <div className={styles.grid}>
+              {exp.responsabilidades.map((item, i) => (
+                <div key={i} className={styles.item}>
+                  <span className={styles.dot}></span>
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

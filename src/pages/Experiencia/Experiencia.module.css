@@ -2,92 +2,191 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
-h1 {
-    font-size: 28px;
-    margin-bottom: 30px;
+#experiencia h1 {
+    font-size: 32px;
     text-align: center;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-h1::after {
+#experiencia h1::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
-    background: #4da3ff;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
     margin: 10px auto 0;
+    border-radius: 10px;
 }
 
 .expContainer {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
+}
+
+.expContainer::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3b82f6, #8b5cf6, #f97316);
 }
 
 .card {
-    padding: 20px;
+    position: relative;
+    padding: 20px 20px 20px 50px;
     border-radius: 16px;
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
 }
 
-.topRow {
+.card:hover {
+    transform: translateY(-4px);
+    border: 1px solid rgba(59, 130, 246, 0.6);
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(59, 130, 246, 0.2);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #3b82f6, #06b6d4);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.8);
+    border: 2px solid #0f172a;
+}
+
+.header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
+    margin-bottom: 8px;
 }
 
-.iconEmpresa {
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 22px;
-}
-
-.infoEmpresa {
-    margin-left: 0;
-}
-
-.infoEmpresa h2 {
-    font-size: 18px;
-}
-
-.infoEmpresa span {
-    font-size: 14px;
-    opacity: 0.7;
-}
-
-.infoEmpresa h3 {
+.left h2 {
     font-size: 16px;
-    opacity: 0.8;
-    margin-top: 4px;
+    color: #fff;
 }
 
-.card p,
-.card ul {
-    margin-left: 50px;
+.left span {
+    font-size: 13px;
+    color: #60a5fa;
 }
 
-@media (min-width: 1024px) {
+.right {
+    font-size: 12px;
+    color: #9ca3af;
+}
 
-    .expContainer {
-        max-width: 1200px;
-        margin: 0 auto;
+.card p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #d1d5db;
+    line-height: 1.5;
+}
+
+.grid {
+    display: grid;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    gap: 6px;
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: translateX(4px);
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-top: 6px;
+    animation: pulseDot 3s ease-in-out infinite;
+}
+
+.item span {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* 🎨 BULLETS MULTICOLOR */
+.item:nth-child(1) .dot {
+    background: #22c55e;
+    box-shadow: 0 0 6px #22c55e;
+}
+
+.item:nth-child(2) .dot {
+    background: #a855f7;
+    box-shadow: 0 0 6px #a855f7;
+}
+
+.item:nth-child(3) .dot {
+    background: #3b82f6;
+    box-shadow: 0 0 6px #3b82f6;
+}
+
+.item:nth-child(4) .dot {
+    background: #f97316;
+    box-shadow: 0 0 6px #f97316;
+}
+
+.item:nth-child(5) .dot {
+    background: #06b6d4;
+    box-shadow: 0 0 6px #06b6d4;
+}
+
+.item:nth-child(6) .dot {
+    background: #eab308;
+    box-shadow: 0 0 6px #eab308;
+}
+
+/* ✨ ANIMACIÓN */
+@keyframes pulseDot {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
     }
-
-    .card {
-        width: 100%;
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
     }
 }
 
+body {
+    background: radial-gradient(circle at top, #1e293b, #0f172a);
+}
+
+/* 📱 TABLET */
 @media (min-width: 768px) {
 
-    h1 {
+    #experiencia h1 {
         font-size: 42px;
     }
 
@@ -95,32 +194,66 @@ h1::after {
         gap: 40px;
     }
 
+    .expContainer::before {
+        left: 25px;
+    }
+
     .card {
-        padding: 30px;
-        border-radius: 20px;
+        padding: 25px 25px 25px 65px;
     }
 
-    .topRow {
-        display: grid;
-        grid-template-columns: auto 1fr auto;
+    .card::before {
+        left: 15px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        gap: 20px;
     }
 
-    .iconEmpresa {
-        padding: 14px;
-        font-size: 28px;
+    .left h2 {
+        font-size: 18px;
     }
 
-    .infoEmpresa {
-        margin-left: 20px;
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 1024px) {
+
+    #experiencia {
+        padding: 100px 40px;
     }
 
-    .infoEmpresa h2 {
-        font-size: 22px;
+    .expContainer {
+        max-width: 1100px;
     }
 
-    .infoEmpresa span {
-        font-size: 16px;
+    .expContainer::before {
+        left: 30px;
+    }
+
+    .card {
+        padding: 30px 30px 30px 80px;
+    }
+
+    .card::before {
+        left: 20px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .left h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 15px;
     }
 }
